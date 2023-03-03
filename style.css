@@ -1,26 +1,21 @@
 @import url("https://fonts.googleapis.com/css2?family=VT323");
-/*Global*/
 
-
+/* Global styles */
 
 body {
     background-image: url(./Images/Silicone.jpg);
-    font-family: VT323;    
+    font-family: VT323;
     color: white;
-    background-size: 100% auto;
-    background-size: 100% 100%;
     background-size: cover;
 }
 
-
-
 h1 {
-    font-size: 80px;
+    font-size: 10vw;
     text-align: center;
     font-weight: bold;
 }
 
-h2{
+h2 {
     font-size: 50px;
     text-align: center;
     font-weight: bold;
@@ -33,24 +28,26 @@ h3 {
 }
 
 p {
-    font-size: 20px; 
+    font-size: 1.5rem;
+    text-align: center;
 }
 
 ul {
-    padding-bottom: 20px;;
+    padding-bottom: 20px;
 }
 
 li {
-    font-size: 20px;    
+    font-size: 1.5rem;
 }
 
-/*Style*/
+/* Navigation styles */
 
 .nav {
     top: 0;
-    display: flex; 
+    display: flex;
+    position: fixed;
     width: 100%;
-    height: 18px;
+    height: 3rem;
 }
 
 .nav ul {
@@ -64,43 +61,36 @@ li {
     text-decoration: none;
     text-transform: uppercase;
     color: white;
-    font-size: 1.5em;
-    margin: 0 1rem;
+    font-size: 1.5rem;
+    margin: 3rem;
     padding: 1rem;
     font-weight: bold;
     transition: color 0.3s ease;
+}
+
+@media (max-width: 600px) {
+    .nav ul a {
+        margin: 0.5rem;
+    }
 }
 
 .nav ul a:hover {
     color: grey;
 }
 
-.home {
-
-}
-
-.about {
-
-}
-
-.skills {
-    
-}
-
-.exp {
-    
-}
-
-.contact {
-    
-}
+/* Page section styles */
 
 .home, .about, .skills, .exp, .contact {
-  background-color: rgba(0, 0, 0, 0.600);
-  border-radius: 20px;
-  padding: 20px;
-  width: 90%;
-  margin: auto;
-  margin-bottom: 20px;
-  
+    background-color: rgba(0, 0, 0, 0.9);
+    border-radius: 20px;
+    padding: 2rem;
+    width: 90%;
+    margin: auto;
+    margin-top: 3rem;
+}
+
+/* Footer styles */
+
+footer p {
+    font-size: 1.5rem;
 }
