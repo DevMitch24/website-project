@@ -5,7 +5,7 @@
 body {
     background-image: url(./Images/Silicone.jpg);
     font-family: VT323;
-    color: white;
+    color: #c9b900;
     background-size: cover;
 }
 
@@ -43,7 +43,7 @@ li {
 /* Navigation styles */
 
 .nav {
-    top: 0;
+    top: 1rem;
     display: flex;
     position: fixed;
     width: 100%;
@@ -61,6 +61,8 @@ li {
     text-decoration: none;
     text-transform: uppercase;
     color: white;
+    background-color: black;
+    border-radius: 10px;
     font-size: 1.5rem;
     margin: 3rem;
     padding: 1rem;
@@ -70,7 +72,7 @@ li {
 
 @media (max-width: 600px) {
     .nav ul a {
-        margin: 0.5rem;
+        margin: 1rem;
     }
 }
 
@@ -80,17 +82,65 @@ li {
 
 /* Page section styles */
 
-.home, .about, .skills, .exp, .contact {
+.home {
     background-color: rgba(0, 0, 0, 0.9);
     border-radius: 20px;
-    padding: 2rem;
+    padding: 2%;
     width: 90%;
     margin: auto;
-    margin-top: 3rem;
+    margin-top: 5rem;
+}
+.about, .skills, .exp, .contact {
+    background-color: rgba(0, 0, 0, 0.9);
+    border-radius: 20px;
+    padding: 2%;
+    width: 90%;
+    margin: auto;
+    margin-top: 1rem;
+}
+
+@media (min-width: 1000px) {
+    .skills, .exp {
+      display: inline-block;
+      width: 45%;
+      height: 15rem;
+      
+    }
+
+    .exp {
+        float: right;
+    }
+
+    #sbs {
+        width: 94%;
+        padding-left: 0%;
+        padding-right: 0%;
+        margin: auto;
+    }
 }
 
 /* Footer styles */
 
 footer p {
-    font-size: 1.5rem;
+    font-size: 1rem;
+    text-align: right;
+    padding-right: 1rem;
+}
+
+.contact ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    list-style: none;
+    padding: 0;
+}
+
+  .contact ul li {
+    margin: 0 1rem;
+}
+
+@media (min-width: 1000px) {
+  .contact ul{
+    flex-direction: row;
+  }
 }
